@@ -1,41 +1,92 @@
 html{
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body {
   font-family: poppins;
-  background-color: #574c4f;
-  /* margin: 0px; */
-  /* Show it is fixed to the top */
-  min-height: 75rem;
-  padding-top: 4.5rem;
+  color: #efdab9;
+  background-color: #332d2e;
+  margin: 0;
+  padding: 20px;
 }
 
-.navbar-dark {
-  background-color: #332d2e;
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #21191a;
+  border-radius: 20px;
+}
+
+.logo {
+  padding: 0 0 0 10px!important;
+}
+
+header img {
+  height: 50px;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.nav-list-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #efdab9;
 }
 
 .Title-1-1 {
-  font-family: "Lato", poppins;
+  font-family: Lato;
   font-size: 25px;
 }
 
 .Title-1 {
-  padding-top: 100px;
-  margin: 0;
-  color: white;
-  font-family: "Livvic", poppins;
+  font-family: Livvic;
   font-size: 60px
+}
+
+.hero-logo-circles{
+  width:366px;
+  height:366px;
+  margin:20px;
+  position:relative;
 }
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
-  /* padding-top: 100px;
-  padding-right: 100px; */
-  padding: 50px 100px 0 100px
+  margin: 0 auto;
+  padding: 50px 120px;
+}
+
+@media only screen and (max-width: 1170px) {
+  .wrapper {
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .Intro {
+    text-align: center;
+  }
+}
+
+.icons {
+  display: flex;
+}
+
+.icons img {
+  width: 100px;
+  height: 100px;
+}
+
+.Intro {
+  align-self: center;
 }
 
 .hero-logo-circles {
@@ -78,7 +129,3 @@ body {
 .hero-logo-circle:nth-child(9){animation-duration:110s}
 .hero-logo-circle:nth-child(10){animation-duration:120s}
 @keyframes hero-logo-circle{100%{transform:rotate(1turn)}}
-
-.navbar {
-  background-color: #211d1e;
-}
