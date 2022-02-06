@@ -43,6 +43,14 @@ header img {
 .Title-1-1 {
   font-family: Lato;
   font-size: 25px;
+  animation: fadeIn 1s ease-in both;
+  animation-delay: 1s
+}
+
+h1 {
+  margin-bottom: 0;
+  animation: fadeIn 1s ease-in both;
+  animation-delay: 1s
 }
 
 .Title-1 {
@@ -86,12 +94,25 @@ header img {
 }
 
 .icons {
+  padding-top: 10px;
   display: flex;
+  grid-gap: 20px;
+  grid-template-columns: auto;
 }
 
-.icons img {
-  width: 100px;
-  height: 100px;
+.icons .fab {
+  animation: fadeIn 1s ease-in both;
+}
+
+.icons .fab:nth-child(1) {
+	animation-delay: 1s;
+}
+.icons .fab:nth-child(2) {
+	animation-delay: 1.5s;
+}
+
+.fab {
+  font-size: 25px;
 }
 
 .Intro {
@@ -127,6 +148,22 @@ header img {
   animation: none;
   left: 110px;
 }
+
+a {
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .hero-logo-circle:nth-child(1){animation-duration:30s}
 .hero-logo-circle:nth-child(2){animation-duration:40s}
 .hero-logo-circle:nth-child(3){animation-duration:50s}
