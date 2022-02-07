@@ -3,8 +3,10 @@ html{
     overflow-x: hidden;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
   color: #efdab9;
   background-color: #332d2e;
   margin: 0;
@@ -42,7 +44,8 @@ header img {
 .nav-list-item:hover {
   padding: 10px;
   text-decoration: none;
-  color: #f2798d;
+  color: #21191a;
+  background-color: #f2798d;
 }
 
 .Title-1-1 {
@@ -105,12 +108,15 @@ h1 {
 .icons {
   padding-top: 10px;
   display: flex;
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
   grid-template-columns: auto;
 }
 
 .icons a {
   animation: fadeIn 1s ease-in both;
+  padding-right: 20px;
+  color: #efdab9;
+  font-size: 20px;
 }
 
 .icons a:nth-child(1) {
@@ -119,14 +125,18 @@ h1 {
 .icons a:nth-child(2) {
 	animation-delay: 0.8s;
 }
+.icons a:nth-child(3) {
+	animation-delay: 1s;
+}
 
-.fab {
-  font-size: 25px;
+
+.fab, .fas {
+
   color: #efdab9;
 }
 
-.fab:hover{
-  color: #f2798d;
+.fab:hover, .icons a:hover{
+  color: #f2798d!important;
 }
 
 .Intro {
