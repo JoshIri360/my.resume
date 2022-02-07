@@ -172,6 +172,6 @@ a {
 .hero-logo-circle:nth-child(6){animation-duration:80s}
 .hero-logo-circle:nth-child(7){animation-duration:90s}
 .hero-logo-circle:nth-child(8){animation-duration:100s}
-.hero-logo-circle:nth-child(9){animation-duration:110s}
+.hero-logo-circle:nth-child(9){animation-duration:10s}
 .hero-logo-circle:nth-child(10){animation-duration:120s}
 @keyframes hero-logo-circle{100%{transform:rotate(1turn)}}

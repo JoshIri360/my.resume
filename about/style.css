@@ -1,0 +1,78 @@
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: poppins;
+  color: #efdab9;
+  background-color: #332d2e;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  font-size: 1.9rem;
+  animation: fadeUp 2s ease-in both;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-shrink: 10px;
+}
+
+img:hover {
+  transform: scale(1.07);
+}
+
+img {
+  padding: 20px;
+  transition: all 1s ease-in-out;
+  animation: fadeLeft 1s ease-in;
+}
+
+p {
+  animation: fadeRight 1.2s ease-in both;
+}
+
+p a{
+  text-decoration: none;
+  color: #f2798d;
+}
+
+@keyframes fadeLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-5%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeRight {
+	from {
+		opacity: 0;
+		transform: translate3d(5%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 0, 5%);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
