@@ -8,14 +8,12 @@ body {
   color: #efdab9;
   background-color: #332d2e;
   margin: 0;
-  padding: 20px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   background-color: #21191a;
-  border-radius: 20px;
 }
 
 .logo {
@@ -25,6 +23,7 @@ header {
 header img {
   height: 50px;
   align-items: center;
+  padding-left: 30px;
 }
 
 .nav-list {
@@ -40,6 +39,12 @@ header img {
   color: #efdab9;
 }
 
+.nav-list-item:hover {
+  padding: 10px;
+  text-decoration: none;
+  color: #f2798d;
+}
+
 .Title-1-1 {
   font-family: Lato;
   font-size: 25px;
@@ -51,6 +56,10 @@ h1 {
   margin-bottom: 0;
   animation: fadeIn 1s ease-in both;
   animation-delay: 1s
+}
+
+.pink {
+  color: #f2798d;
 }
 
 .Title-1 {
@@ -100,19 +109,24 @@ h1 {
   grid-template-columns: auto;
 }
 
-.icons .fab {
+.icons a {
   animation: fadeIn 1s ease-in both;
 }
 
-.icons .fab:nth-child(1) {
-	animation-delay: 1s;
+.icons a:nth-child(1) {
+	animation-delay: 0.6s;
 }
-.icons .fab:nth-child(2) {
-	animation-delay: 1.5s;
+.icons a:nth-child(2) {
+	animation-delay: 0.8s;
 }
 
 .fab {
   font-size: 25px;
+  color: #efdab9;
+}
+
+.fab:hover{
+  color: #f2798d;
 }
 
 .Intro {
