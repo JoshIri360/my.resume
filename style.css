@@ -44,8 +44,7 @@ header img {
 .nav-list-item:hover {
   padding: 10px;
   text-decoration: none;
-  color: #21191a;
-  background-color: #f2798d;
+  color: #f2798d;
 }
 
 .Title-1-1 {
@@ -135,7 +134,7 @@ h1 {
   color: #efdab9;
 }
 
-.fab:hover, .icons a:hover{
+.icons:hover  {
   color: #f2798d!important;
 }
 
