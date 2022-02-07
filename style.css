@@ -79,16 +79,18 @@ h1 {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
   padding: 50px 120px;
 }
 
 @media only screen and (max-width: 1170px) {
   .wrapper, .icons {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 50px 0;
+    margin: 0 auto;
+    padding: 50px 120px;
   }
 }
 
@@ -102,6 +104,14 @@ h1 {
   .Intro {
     padding-left: 20px;
   }
+}
+
+.icons {
+  justify-content: center;
+}
+
+.Intro {
+  text-align: center;
 }
 
 .icons {
@@ -130,12 +140,11 @@ h1 {
 
 
 .fab, .fas {
-
   color: #efdab9;
 }
 
-.icons:hover  {
-  color: #f2798d!important;
+.fab:hover, .fas:hover  {
+  color: #f2798d;
 }
 
 .Intro {
