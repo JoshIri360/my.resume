@@ -79,18 +79,16 @@ h1 {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 50px 120px;
 }
 
 @media only screen and (max-width: 1170px) {
-  .wrapper, .icons {
-    display: flex;
-    flex-wrap: wrap;
+  .wrapper {
     justify-content: center;
-    margin: 0 auto;
-    padding: 50px 120px;
+    padding: 50px 0;
   }
 }
 
@@ -106,17 +104,20 @@ h1 {
   }
 }
 
-.icons {
-  justify-content: center;
+@media only screen and (max-width: 518px) {
+  li {
+    font-size: 14px;
+  }
 }
 
-.Intro {
-  text-align: center;
+header {
+  width: 100%;
 }
 
 .icons {
   padding-top: 10px;
   display: flex;
+  justify-content: center;
   /* grid-gap: 20px; */
   grid-template-columns: auto;
 }
@@ -140,11 +141,12 @@ h1 {
 
 
 .fab, .fas {
+
   color: #efdab9;
 }
 
-.fab:hover, .fas:hover  {
-  color: #f2798d;
+.icons:hover  {
+  color: #f2798d!important;
 }
 
 .Intro {

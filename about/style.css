@@ -22,7 +22,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-shrink: 10px;
+}
+
+@media only screen and (max-width: 838) {
+  p {
+    text-align: center;
+  }
 }
 
 img:hover {
