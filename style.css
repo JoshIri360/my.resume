@@ -12,27 +12,28 @@ body {
   margin: 0;
 }
 
-header {
+a {text-decoration: none;}
+
+.navigation {
   display: flex;
   justify-content: space-between;
   background-color: #21191a;
+  flex-shrink: 4;
 }
 
-.logo {
-  padding: 0 0 0 10px!important;
-}
-
-header img {
+.navigation img {
   height: 50px;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-right: 10px;
+  display: flex;
 }
 
 .nav-list-item {
@@ -42,76 +43,48 @@ header img {
 }
 
 .nav-list-item:hover {
-  padding: 10px;
-  text-decoration: none;
   color: #f2798d;
+}
+
+.Intro {
+  padding: 20% 5%;
+  text-align: center;
 }
 
 .Title-1-1 {
   font-family: Lato;
   font-size: 25px;
   animation: fadeIn 1s ease-in both;
-  animation-delay: 1s
+  animation-delay: 1s;
 }
 
 h1 {
-  margin-bottom: 0;
+  font-family: Livvic;
+  font-size: 375%;
+  margin: 0;
   animation: fadeIn 1s ease-in both;
   animation-delay: 1s
 }
 
-.pink {
+#name {
   color: #f2798d;
-}
-
-.Title-1 {
-  font-family: Livvic;
-  font-size: 60px
 }
 
 .hero-logo-circles{
   width:366px;
   height:366px;
-  margin:20px;
+  /* margin-top:30px; */
   position:relative;
+  padding-top: 5%;
 }
 
 .wrapper {
   display: flex;
+  grid-gap: 10%;
   flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 50px 120px;
-}
-
-@media only screen and (max-width: 1170px) {
-  .wrapper {
-    justify-content: center;
-    padding: 50px 0;
-  }
-}
-
-@media only screen and (max-width: 967px) {
-  .Intro {
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 968px) {
-  .Intro {
-    padding-left: 20px;
-  }
-}
-
-@media only screen and (max-width: 518px) {
-  li {
-    font-size: 14px;
-  }
-}
-
-header {
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7%;
 }
 
 .icons {
@@ -160,31 +133,14 @@ header {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
   list-style: none;
 }
-.hero-logo-circle {
-  display: flex;
-  position:absolute;
+
+.hero-logo-circles img {
+  position: absolute;
   animation:hero-logo-circle 1s linear infinite;
-  will-change:transform
-}
-
-.first-btn {
-  border-color: #dda032;
-  color: #dda032;
-}
-
-.hero-logo {
-  display: flex;
-  justify-content: center;
-  width: 130px;
-  height: 130px;
-  animation: none;
-  left: 110px;
-}
-
-a {
-    text-decoration: none;
+  will-change:transform;
 }
 
 @keyframes fadeIn {
