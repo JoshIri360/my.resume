@@ -4,6 +4,58 @@ html{
 }
 
 body {
+  margin: 0;
+  padding: 0!important;
+}
+
+.container {
+  height: 100%;
+  align-items: center;
+}
+
+a {text-decoration: none;}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #21191a;
+  flex-shrink: 4;
+}
+
+.navigation img {
+  height: 50px;
+  align-items: center;
+  padding: 0px;
+  padding-top: 3px;
+  padding-left: 50px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  display: flex;
+}
+
+.nav-list-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #efdab9;
+}
+
+#active {
+  padding: 10px;
+  text-decoration: none;
+  color: #f2798d;
+}
+
+.nav-list-item:hover {
+  color: #f2798d;
+}
+
+body {
   font-family: poppins;
   color: #efdab9;
   background-color: #332d2e;
@@ -24,7 +76,7 @@ h2 {
   grid-template-columns: 1fr 2fr;
 }
 
-.container {
+.container-about {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

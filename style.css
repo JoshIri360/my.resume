@@ -30,6 +30,8 @@ a {text-decoration: none;}
 .navigation img {
   height: 50px;
   align-items: center;
+  padding: 0px;
+  padding-top: 3px;
   padding-left: 50px;
 }
 
