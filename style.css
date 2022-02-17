@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 html{
     max-width: 100%;
     overflow-x: hidden;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -27,12 +27,12 @@ a {text-decoration: none;}
   flex-shrink: 4;
 }
 
+
+
 .navigation img {
   height: 50px;
   align-items: center;
-  padding: 0px;
-  padding-top: 3px;
-  padding-left: 50px;
+  padding: 3px 0px 0px 50px;
 }
 
 .nav-list {
